@@ -1,0 +1,140 @@
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* root */
+:root {
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+    color: rgb(36, 36, 36);
+    font-size: 1.5vh;
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* animation */
+@keyframes hover {
+    0%{
+        transform: translate(0px, 0px);
+    }
+    25%{
+        transform: translate(-10px, 5px);
+    }
+    50%{
+        transform: translate(-5px, -5px);
+    }
+    75%{
+        transform: translate(5px, -5px);
+    }
+    100%{
+        transform: translate(0px, 0px);
+    }
+}
+
+/* Class */
+.profile {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vh;
+    height: auto;
+    padding: 5%;
+    background-color: rgba(36, 36, 36, 0.90);
+    border-radius: 5%;
+    transition: .5s;
+    animation:hover 10s infinite ;
+    box-shadow: 0px 3px 15px 3px rgba(0, 0, 0, 0.3);
+}
+
+.profile:hover {
+    width: 79vh;
+    height: auto;
+    background-color: rgba(62, 70, 85, 1);
+    animation-play-state: paused;
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.profile-pic {
+    width: 30vh;
+    height: 30vh;
+    border-radius: 100%;
+    filter: grayscale(100%);
+    box-shadow: 0px 3px 15px 3px rgba(0, 0, 0, 0.3);
+    transition: .5s;
+    margin-left: auto;
+    margin-right: auto;
+}
+.profile-pic:hover {
+    width: 28vh;
+    height: 28vh;
+    border-radius: 100%;
+    filter: grayscale(25%);
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.profile-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: rgb(199, 199, 199);
+}
+
+.profile-text h1 {
+    font-size: 3rem;
+    letter-spacing: -.12ch;
+    font-weight: bold;
+    transition: .5s;
+}
+.profile-text h1:hover {
+    font-size: 2.8rem;
+    color: rgb(76, 115, 199);
+}
+
+.profile-text h2 {
+    font-size: 1.5rem;
+    font-weight:lighter;
+    transition: .5s;
+    margin-bottom: 1%;
+}
+.profile-text h2:hover {
+    font-size: 1.4rem;
+    color: rgb(76, 115, 199);
+}
+
+.profile-text h3 {
+    font-size: 1.2rem;
+    font-weight:lighter;
+    transition: .5s;
+    text-align: justify;
+    margin-left: 38%;
+    margin-right: auto;
+}
+.profile-text h3:hover {
+    font-size: 1.1rem;
+    color: rgb(76, 115, 199);
+}
+
+.profile-text p {
+    margin: 3%;
+    transition: .5s;
+}
+.profile-text p:hover {
+    font-size: .98rem;
+    color: rgb(76, 115, 199);
+}
+
+.profile ul {
+    text-align: justify;
+    margin-left: 43%;
+    margin-right: auto;
+    margin-bottom: 3%;
+    transition: .5s;
+}
+.profile ul:hover {
+    font-size: .98rem;
+    color: rgb(76, 115, 199);
+}
